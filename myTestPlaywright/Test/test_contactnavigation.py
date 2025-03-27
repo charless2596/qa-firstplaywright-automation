@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
-from fixtures.contactnavigation import navigationContact, uploadingAttachments
+from myTestPlaywright.fixtures.contactnavigation import navigationContact, uploadingAttachments
 
 
 firstname = "John"

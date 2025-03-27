@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
-from fixtures.registrationnav import registrationInpt, signup, forgotpassw, addtofavorites
+from myTestPlaywright.fixtures.registrationnav import registrationInpt, signup, forgotpassw, addtofavorites
 
 firstname = "John"
 lastname = "Doe"

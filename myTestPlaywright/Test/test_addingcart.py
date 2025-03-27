@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
-from fixtures.addingcart import cartadded,addingcartwithmultiplequantity
+from myTestPlaywright.fixtures.addingcart import cartadded,addingcartwithmultiplequantity
 
 
 Product_Name1 = "product-01JPWKGAS994T3FG7Q1HHM1TGH"

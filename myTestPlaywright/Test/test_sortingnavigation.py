@@ -1,5 +1,5 @@
 from playwright.sync_api import sync_playwright
-from fixtures import sortingnavigation
+from myTestPlaywright.fixtures import sortingnavigation
 import pytest
 
 
