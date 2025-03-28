@@ -24,7 +24,7 @@ def uploadingAttachments (page: Page, firstname,lastname,email,option1,message,f
     page.wait_for_selector("[data-test=\"subject\"]")
     page.select_option("[data-test=\"subject\"]", value="Payments")
     page.type("[data-test=\"message\"]","testing message to testing testing testinng testing testing ")
-    page.set_input_files('input[type="file"]', 'venv/Images/sampletext.txt')
+    page.set_input_files('input[type="file"]', 'myTestPlaywright/Images/sampletext.txt')
     page.locator("[data-test=\"contact-submit\"]").click()
     alert_element = page.locator('div[role="alert"].alert.alert-success')
     expected_text = "Thanks for your message! We will contact you shortly."

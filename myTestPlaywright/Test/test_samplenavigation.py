@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 import pytest
-from myTestPlaywright.fixtures import samplenavig
+from fixtures import samplenavig
 
 @pytest.fixture(scope="function")
 def setup_browser():

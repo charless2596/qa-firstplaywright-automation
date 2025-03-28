@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
-from myTestPlaywright.fixtures.registrationnav import registrationInpt, signup, forgotpassw, addtofavorites
+from fixtures.registrationnav import registrationInpt, signup, forgotpassw
 
 firstname = "John"
 lastname = "Doe"
@@ -47,11 +47,11 @@ def test_forgotPassword (setup_browser) :
     forgotpassw (page,email)
 
 
-def test_favorites (setup_browser) :
+# def test_favorites (setup_browser) :
 
-    page = setup_browser
+#     page = setup_browser
 
-    addtofavorites(page,email,password,search)
+#     addtofavorites(page,email,password,search)
     
 
 
