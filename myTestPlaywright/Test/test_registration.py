@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
-from fixtures.registrationnav import registrationInpt, signup, forgotpassw
+from fixtures import registrationnav
 
 firstname = "John"
 lastname = "Doe"
@@ -30,21 +30,21 @@ def test_userRegistration (setup_browser) :
 
     page = setup_browser
 
-    registrationInpt(page,firstname,lastname, birthdate, street, postal, city, state, country, phone, email, password)
+    registrationnav.registrationInpt(page,firstname,lastname, birthdate, street, postal, city, state, country, phone, email, password)
     
 
 def test_signUp (setup_browser) :
 
     page = setup_browser
 
-    signup(page,email,password) 
+    registrationnav.signup(page,email,password) 
     
 
 def test_forgotPassword (setup_browser) :
     
     page = setup_browser
 
-    forgotpassw (page,email)
+    registrationnav.forgotpassw (page,email)
 
 
 # def test_favorites (setup_browser) :
@@ -52,6 +52,12 @@ def test_forgotPassword (setup_browser) :
 #     page = setup_browser
 
 #     addtofavorites(page,email,password,search)
+
+def test_loginAsGoogle (setup_browser) :
+
+    page = setup_browser
+
+    registrationnav.loginasgoogle(page)
     
 
 

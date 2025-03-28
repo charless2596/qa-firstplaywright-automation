@@ -49,3 +49,9 @@ def test_navigateLanguage (setup_browser) :
     page = setup_browser
 
     samplenavig.navigateLanguage(page)
+
+def test_nextpage (setup_browser) :
+
+    page = setup_browser
+
+    samplenavig.nextpage(page)

@@ -46,3 +46,8 @@ def forgotpassw (page: Page, email) :
 #     # page.click("[data-test=\"search-submit\"]")
 #     # page.click("[data-test=\"product-01JPWKGASNNRWETT86PCG928XA\"]")
 #     # page.click("[data-test=\"add-to-favorites\"]")
+
+def loginasgoogle (page: Page) :
+    page.goto("https://practicesoftwaretesting.com/")
+    page.click("[data-test=\"nav-sign-in\"]")
+    page.click('button[aria-label="Sign in with Google"]')

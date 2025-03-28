@@ -33,3 +33,7 @@ def navigateLanguage (page: Page) :
     page.goto("https://practicesoftwaretesting.com/")
     page.click("[data-test=\"language-select\"]")
     page.click("[data-test=\"lang-en\"]")
+
+def nextpage (page: Page) :
+    page.goto("https://practicesoftwaretesting.com/")
+    page.click('a[aria-label="Next"]')
