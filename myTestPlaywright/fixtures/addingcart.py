@@ -14,7 +14,6 @@ def cartadded (page : Page, product1, product2, product3):
 
 def addingcartwithmultiplequantity (page: Page, category, selectedprod):
     page.goto("https://practicesoftwaretesting.com/")
-    page.click("[data-test=\"product-01JQ6FBQQVKMF9KGFJFAXTG3V4\"]")
     page.click("img.card-img-top")
     page.click("[data-test=\"increase-quantity\"]")
     page.click("[data-test=\"increase-quantity\"]")

@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
-from myTestPlaywright.fixtures.contactnavigation import navigationContact, uploadingAttachments
+from fixtures.contactnavigation import navigationContact, uploadingAttachments
 
 
 firstname = "John"
@@ -8,7 +8,7 @@ lastname = "Doe"
 email = "johndoe@testing.com"
 option1 = "Payments"
 message = "testing message to testing testing testinng testing testing"
-fileUpload1= "venv/Images/sampletext.txt"
+fileUpload1= "myTestPlaywright/Images/sampletext.txt"
 
 
 @pytest.fixture(scope="function")

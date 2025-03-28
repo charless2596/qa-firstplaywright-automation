@@ -7,7 +7,7 @@ Product_Name1 = "product-01JPWKGAS994T3FG7Q1HHM1TGH"
 Product_Name2 = "product-01JPWKGASBDVPDFCW45VK8GGEG"
 Product_Name3 = "product-01JPWKGASDB4AZ0CGKPRBK7QEM"
 Product_Category = "category-01JQ6FBQP3FRSMKBVV7HYCPG0S"
-Product_Selected = "[data-test=\"product-01JQ6FBQQVKMF9KGFJFAXTG3V4\"]"
+Product_Selected = "img.card-img-top"
 
 @pytest.fixture(scope="function")
 def setup_browser():
